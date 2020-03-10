@@ -11,9 +11,12 @@ import ie.cct.objectorientedconstructs.FeedItem;
 
 public class Feed implements FeedInterface {
 	
+	private String  content;
+	private String title;
+	private int num;
+	
 	ArrayList<FeedItem> Collection = new ArrayList<FeedItem>();
-	//private String  content;
-	//private String title;
+	
 	
 
 	@Override
@@ -31,7 +34,7 @@ public class Feed implements FeedInterface {
 	@Override
 	public int numItems() {
 		// TODO Auto-generated method stub
-		return 0;
+		return num;
 	}
 
 	@Override
