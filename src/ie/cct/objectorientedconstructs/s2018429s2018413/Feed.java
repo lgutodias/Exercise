@@ -3,12 +3,16 @@
 
 package ie.cct.objectorientedconstructs.s2018429s2018413;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 import ie.cct.objectorientedconstructs.FeedInterface;
 import ie.cct.objectorientedconstructs.FeedItem;
 
 public class Feed implements FeedInterface {
+	
+	ArrayList<FeedItem> Collection = new ArrayList<FeedItem>();
+	
 
 	@Override
 	public Collection<String> listTitles() {
@@ -19,7 +23,7 @@ public class Feed implements FeedInterface {
 	@Override
 	public FeedItem getItem(String title) {
 		// TODO Auto-generated method stub
-		return null;
+		return getItem;
 	}
 
 	@Override
