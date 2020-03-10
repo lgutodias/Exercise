@@ -5,24 +5,28 @@ package ie.cct.objectorientedconstructs.s2018429s2018413;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import ie.cct.objectorientedconstructs.FeedInterface;
 import ie.cct.objectorientedconstructs.FeedItem;
 
 public class Feed implements FeedInterface {
 	
-	private String  content;
-	private String title;
-	private int num;
+	private Collection<FeedItem> items;
 	
-	ArrayList<FeedItem> Collection = new ArrayList<FeedItem>();
+	
+	public Feed (Collection<FeedItem> items) {
+		this.items = items;
+	}
+	
+	//ArrayList<FeedItem> Collection = new ArrayList<FeedItem>();
 	
 	
 
 	@Override
 	public Collection<String> listTitles() {
 		// TODO Auto-generated method stub
-		return null;
+		this.items;
 	}
 
 	@Override
