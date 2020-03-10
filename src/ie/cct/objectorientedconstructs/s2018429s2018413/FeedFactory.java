@@ -1,3 +1,6 @@
+
+//@author Diego
+
 package ie.cct.objectorientedconstructs.s2018429s2018413;
 
 import java.io.BufferedReader;
